@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+/* css all variable  */
+:root {
+  --font-p: font-family: 'Poppins', sans-serif;
+  --font-r: 'Roboto', sans-serif;
+  --font-rc: 'Roboto Condensed', sans-serif;
+  --font-robotSlab: 'Roboto Slab', serif;
+  --bg-color: #130f40;
+  --m-fontcolor: #f5f6fa;
+  --s-fontcolor: #2c3e50;
+  --border-color: #eb4d4b;
+  --icon-bg-color: #30336b;
+  --border2-color: #7f8fa6;
+}
+
+body {
+  background: #040114 !important;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* style for main app  */
+
+.app {
+  width: 300px;
+  height: 500px;
+  border: 5px solid var(--m-fontcolor);
+  border-radius: 8px;
+  background: var(--bg-color);
+  overflow-y: scroll;
+
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* style for app task  */
+.add-task {
+  background: #e7ebe6;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: var(--font-rc);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-task span {
+  font-size: 20px;
+  font-family: var(--font-rc);
+  color: var(--s-fontcolor);
+  transition: color .5s ease;
+}
+
+.add-task span:hover {
+  color: var(--border-color);
+}
+
+/* style for incon and heading tag  */
+i {
+  background: var(--icon-bg-color);
+  padding: 5px;
+  border-radius: 4px;
+  margin: 2px 4px;
+  color: var(--m-fontcolor);
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h4, h5 {
+  color: var(--m-fontcolor);
+}
+
+/* style for add-post section  */
+.add-post {
+  border: 3px solid var(--border2-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 20px 10px;
+  background: var(--m-fontcolor);
+  display: flex;
+  flex-direction: column;
+}
+
+.add-post div {
+  display: grid;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-post>span, .add-post i {
+  margin-bottom: 5px;
+}
+
+.option i {
+  padding: 5px;
+  background: var(--icon-bg-color);
+  color: var(--m-fontcolor);
+  cursor: pointer;
+}
+
+.one {
+  font-size: 20px;
+  font-family: var(--font-robotSlab);
+  color: #34495e;
+}
+
+.two {
+  color: 16px;
+  color: #535c68;
+  font-weight: 100;
+}
+
+#post p {
+  color: var(--s-fontcolor);
+  font-size: 18px;
+  font-weight: normal;
+  font-family: var(--font-r);
+}
+
+.text-white {
+  font-size: 20px;
+  font-family: var(--font-r);
+}
+
+/* style for form input section  */
+#msg {
+  color: #FC427B;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font-robotSlab);
+}
+
+#inputText, #inputDate, #textarea {
+  font-size: 17px;
+  font-family: var(--font-p);
+  font-weight: bold;
+}
