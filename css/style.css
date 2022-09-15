@@ -124,7 +124,9 @@ h4, h5 {
   color: var(--m-fontcolor);
   cursor: pointer;
 }
-
+.option i:active{
+  color:red;
+}
 .one {
   font-size: 20px;
   font-family: var(--font-robotSlab);
