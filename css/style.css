@@ -125,7 +125,7 @@ h4, h5 {
   cursor: pointer;
 }
 .option i:active{
-  color:red;
+  color: var(--border-color);
 }
 .one {
   font-size: 20px;
